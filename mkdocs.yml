@@ -1,0 +1,31 @@
+site_name: gitlui's blog
+site_url: http://www.goebkes.dev
+
+locale: de
+# time_format: '%Y-%m-%d %H:%M'
+# meta_time_format: '%Y-%m-%d %H:%M'
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - blogging:
+      dirs:
+        - blog

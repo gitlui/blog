@@ -28,7 +28,7 @@ print(lorem.text())
 
 install lorem-ipsum
 ```bash
-pip3 install lorem-ipsum
+pip3 install lorem
 ```
 
 ## Execute it
